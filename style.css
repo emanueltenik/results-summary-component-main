@@ -65,3 +65,66 @@ body {
       }
     }
   }
+
+
+  /*  || GENERAL STYLES   */
+body {
+    font-size: var(--fs-base);
+    min-height: 100vh;
+    overflow-y: auto;
+    background-color: var(--NEUTRAL_LIGHT_COLOR);
+}
+h1, h2 {
+    font-size:  var(--fs-lg);
+    font-weight: 700;
+    margin-bottom: 0.125em;
+}
+h3 {
+    font-size: var(--fs-base);
+}
+
+.result output {
+    order: 2;
+    background: linear-gradient(180deg, hsla(241, 72%, 46%, 1) 55%, var(--PRIMARY) );
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result > p:nth-child(2) {
+    order: 3;
+    text-align: center;
+    margin: 0 1.125em;
+}
+
+.result > p:nth-child(2) strong {
+    display: block;
+    font-size: 22px;
+    color: var(--NEUTRAL_LIGHT_COLOR);
+}
+
+#total-score {
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--NEUTRAL_LIGHT_COLOR);
+}
+
+
+/*  || BLOCKS   */
+.result {
+    padding-top: 1.125em;
+    padding-bottom: 1.125em;
+    background-color: var(--PRIMARY);
+    color:  hsl(241, 100%, 89%);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    margin-bottom: 1.625em; 
+}
