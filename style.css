@@ -20,10 +20,48 @@ body {
     scroll-behavior: smooth;
 }
 
-/*
-Add the correct font weight in Edge and Safari.
-*/
 
-strong {
-  font-weight: bolder;
+/*  || VARAIBLES   */
+:root {
+    /* colors */
+    --PRIMARY: hsl(241, 81%, 54%);
+    --NEUTRAL_LIGHT_COLOR: hsl(0, 0%, 100%);
+    --NEUTRAL_DARK_COLOR: hsl(224, 30%, 27%);
+    --FADED_NEUTRAL_DARK_COLOR: hsla(224, 30%, 27%, 0.5);
 }
+
+/* For browsers that support clamp  */
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+          --fs-sm: clamp(0.9rem, -0.09vi + 0.92rem, 0.84rem);
+          --fs-base: clamp(1.13rem, 0vi + 1.13rem, 1.13rem);
+          --fs-md: clamp(1.41rem, 0.16vi + 1.38rem, 1.5rem);
+          --fs-lg: clamp(1.76rem, 0.4vi + 1.68rem, 2rem);
+          --fs-xl: clamp(2.2rem, 0.78vi + 2.04rem, 2.66rem);
+          --fs-xxl: clamp(2.75rem, 1.34vi + 2.48rem, 3.55rem);
+          --fs-xxxl: clamp(3.43rem, 2.17vi + 3rem, 4.73rem);
+    }
+  }
+  /* For browsers that don't support clamp */
+  @supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+          --fs-sm: 0.9rem;
+          --fs-base: 1.13rem;
+          --fs-md: 1.41rem;
+          --fs-lg: 1.76rem;
+          --fs-xl: 2.2rem;
+          --fs-xxl: 2.75rem;
+          --fs-xxxl: 3.43rem;
+    }
+    @media screen and (min-width: 1280px) {
+      :root {
+              --fs-sm: 0.84rem;
+              --fs-base: 1.13rem;
+              --fs-md: 1.5rem;
+              --fs-lg: 2rem;
+              --fs-xl: 2.66rem;
+              --fs-xxl: 3.55rem;
+              --fs-xxxl: 4.73rem;
+      }
+    }
+  }
