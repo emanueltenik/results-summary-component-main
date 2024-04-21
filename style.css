@@ -112,6 +112,28 @@ h3 {
     color: var(--NEUTRAL_LIGHT_COLOR);
 }
 
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.summary-list {
+    margin-top: 0.125em;
+}
+.summary-list .score {
+    color: #333;
+}
+.summary {
+    padding: 0 1.125em;
+}
+
+.summary h2 {
+    color: var(--NEUTRAL_DARK_COLOR);
+}
+.summary-list {
+    list-style-type: none;
+}
+
 
 /*  || BLOCKS   */
 .result {
@@ -127,4 +149,61 @@ h3 {
     justify-content: flex-start;
     gap: 2em;
     margin-bottom: 1.625em; 
+}
+
+.summary-list-item {
+    border-radius: 5px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+    padding: 1.125em 0.625em;
+    margin-bottom: 1.125em;
+    transition: all 120ms ease-in-out;
+}
+
+.summary-list-item:hover {
+    filter: brightness(.9);
+}
+.summary-list-item-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.125em;
+}
+.summary-list-item-content {
+    color: var(--FADED_NEUTRAL_DARK_COLOR);
+}
+
+
+/*  || MODIFIERS   */
+.summary-list-item--reaction {
+    background-color:  hsla(0, 100%, 67%, 0.05);
+}
+
+.summary-list-item--memory {
+    background-color:  hsla(39, 100%, 56%, 0.05);
+}
+
+.summary-list-item--verbal {
+    background-color: hsla(166, 100%, 37%, 0.05)
+}
+
+.summary-list-item--visual {
+    background-color: hsl(234, 85%, 45%, 0.05);
+}
+
+
+/*  || ELEMENTS   */
+.reaction__title {
+    color:  hsl(0, 100%, 67%);
+}
+.memory__title {
+    color:  hsl(39, 100%, 56%);
+}
+.verbal__title {
+    color: hsla(166, 100%, 37%)
+}
+.visual__title {
+    color: hsl(234, 85%, 45%);
 }
