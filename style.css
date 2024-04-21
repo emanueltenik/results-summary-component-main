@@ -134,6 +134,11 @@ h3 {
     list-style-type: none;
 }
 
+#continue-link:is(:any-link) {
+    display: block;
+    text-decoration: none;
+    outline: none;
+}
 
 /*  || BLOCKS   */
 .result {
@@ -175,6 +180,17 @@ h3 {
     color: var(--FADED_NEUTRAL_DARK_COLOR);
 }
 
+.btn {
+    margin: 1.625em 0;
+    padding: 0.625em  0.125em;
+    font-size:  19px;
+    transition: all 150ms ease-in;
+    border-radius: 30px;
+    text-align: center;
+    border:  none;
+}
+
+
 
 /*  || MODIFIERS   */
 .summary-list-item--reaction {
@@ -193,6 +209,14 @@ h3 {
     background-color: hsl(234, 85%, 45%, 0.05);
 }
 
+.btn--primary {
+    background-color: var(--NEUTRAL_DARK_COLOR);
+    color: var(--NEUTRAL_LIGHT_COLOR);
+}
+.btn--primary:hover { 
+    background-color: var(--PRIMARY);
+    outline: none;
+}
 
 /*  || ELEMENTS   */
 .reaction__title {
