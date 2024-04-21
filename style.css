@@ -207,3 +207,45 @@ h3 {
 .visual__title {
     color: hsl(234, 85%, 45%);
 }
+
+
+@media screen and (min-width: 1024px) {
+    
+    .summary {
+        padding: 1.125em;
+    }
+  
+    body {
+        padding: 1.125em 0 ;
+        display: grid;
+        place-content: center;
+    }
+ 
+    .wrapper {
+        max-width: 640px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        box-shadow: 2px 10px 22px -12px hsla(234, 85%, 45%, 0.3);
+        border-radius: 20px;
+        gap: 1.5em;
+    }
+    .result {
+        border-radius: 20px;
+    }
+    .result, .summary {
+        margin: 0;
+    }
+    .summary .btn  {
+        margin-bottom: 0;
+    }
+    .summary-list-item, .btn {
+        padding: 0.625em;
+    }
+    .summary-list-item:hover {
+        transform: scale(1.07);
+    }
+    .result > p:nth-child(2) {
+        margin: 0 1.625em;
+    }
+}
