@@ -33,7 +33,7 @@ Screenshot of my solution.
 
 ### Links
 
-- Solution URL: 
+- Solution URL : 
 
 ## My process
 
