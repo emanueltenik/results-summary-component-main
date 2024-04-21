@@ -23,7 +23,6 @@ body {
 
 /*  || VARAIBLES   */
 :root {
-    /* colors */
     --PRIMARY: hsl(241, 81%, 54%);
     --NEUTRAL_LIGHT_COLOR: hsl(0, 0%, 100%);
     --NEUTRAL_DARK_COLOR: hsl(224, 30%, 27%);
@@ -140,6 +139,26 @@ h3 {
     outline: none;
 }
 
+
+/*  || UTILITIES   */
+.accent1 {
+    background-color:  hsla(0, 100%, 67%, 0.05);
+    color:  hsl(0, 100%, 67%);
+ }
+ .accent2 {
+     background-color:  hsla(71, 96%, 50%, 0.12);
+     color:  hsl(39, 100%, 56%);
+ }
+ .accent3 {
+     background-color: hsla(166, 100%, 37%, 0.05);
+     color: hsla(166, 100%, 37%)
+ }
+ .accent4 {
+     background-color: hsl(234, 85%, 45%, 0.05);
+      color: hsl(234, 85%, 45%);
+ }
+
+ 
 /*  || BLOCKS   */
 .result {
     padding-top: 1.125em;
@@ -190,25 +209,7 @@ h3 {
     border:  none;
 }
 
-
-
 /*  || MODIFIERS   */
-.summary-list-item--reaction {
-    background-color:  hsla(0, 100%, 67%, 0.05);
-}
-
-.summary-list-item--memory {
-    background-color:  hsla(39, 100%, 56%, 0.05);
-}
-
-.summary-list-item--verbal {
-    background-color: hsla(166, 100%, 37%, 0.05)
-}
-
-.summary-list-item--visual {
-    background-color: hsl(234, 85%, 45%, 0.05);
-}
-
 .btn--primary {
     background-color: var(--NEUTRAL_DARK_COLOR);
     color: var(--NEUTRAL_LIGHT_COLOR);
@@ -217,21 +218,6 @@ h3 {
     background-color: var(--PRIMARY);
     outline: none;
 }
-
-/*  || ELEMENTS   */
-.reaction__title {
-    color:  hsl(0, 100%, 67%);
-}
-.memory__title {
-    color:  hsl(39, 100%, 56%);
-}
-.verbal__title {
-    color: hsla(166, 100%, 37%)
-}
-.visual__title {
-    color: hsl(234, 85%, 45%);
-}
-
 
 @media screen and (min-width: 1024px) {
     
