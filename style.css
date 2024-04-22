@@ -95,6 +95,7 @@ h3 {
     display:  flex;
     justify-content: center;
     align-items: center;
+    color: hsl(241, 100%, 89%);
 }
 
 .result > p:nth-child(2) {
@@ -177,7 +178,8 @@ h3 {
 .result {
     padding-top: 1.125em;
     padding-bottom: 1.125em;
-    background-color: var(--PRIMARY);
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%) 45% );
+    background-blend-mode: normal;
     color:  hsl(241, 100%, 89%);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -207,7 +209,7 @@ h3 {
 .summary-list-item-heading {
     display: flex;
     align-items: center;
-    gap: 0.125em;
+    gap: 0.315em;
 }
 .summary-list-item-content {
     color: var(--FADED_NEUTRAL_DARK_COLOR);
