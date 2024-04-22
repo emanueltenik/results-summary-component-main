@@ -15,7 +15,6 @@
 
 body {
     font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 500;
     line-height: 1.5;
     scroll-behavior: smooth;
 }
@@ -27,6 +26,9 @@ body {
     --NEUTRAL_LIGHT_COLOR: hsl(0, 0%, 100%);
     --NEUTRAL_DARK_COLOR: hsl(224, 30%, 27%);
     --FADED_NEUTRAL_DARK_COLOR: hsla(224, 30%, 27%, 0.5);
+    --FW-BASE: 500;
+    --FW-LG: 700;
+    --FW-XL: 800;
 }
 
 /* For browsers that support clamp  */
@@ -69,15 +71,17 @@ body {
   /*  || GENERAL STYLES   */
 body {
     font-size: var(--fs-base);
+    font-weight: var(--FW-BASE);
     min-height: 100vh;
     overflow-y: auto;
     background-color: var(--NEUTRAL_LIGHT_COLOR);
 }
 h1, h2 {
-    font-size:  var(--fs-lg);
-    font-weight: 700;
+    font-size:  var(--fs-md);
+    font-weight: var(--FW-LG);
     margin-bottom: 0.125em;
 }
+
 h3 {
     font-size: var(--fs-base);
 }
@@ -101,13 +105,13 @@ h3 {
 
 .result > p:nth-child(2) strong {
     display: block;
-    font-size: 22px;
+    font-size: var(--fs-lg);
     color: var(--NEUTRAL_LIGHT_COLOR);
 }
 
 #total-score {
-    font-size: 55px;
-    font-weight: 800;
+    font-size: var(--fs-xxl);
+    font-weight: var(--FW-XL);
     color: var(--NEUTRAL_LIGHT_COLOR);
 }
 
@@ -156,6 +160,16 @@ h3 {
  .accent4 {
      background-color: hsl(234, 85%, 45%, 0.05);
       color: hsl(234, 85%, 45%);
+ }
+ 
+ .fw-base {
+    font-weight: var(--FW-BASE);
+ }
+ .fw-lg {
+    font-weight: var(--FW-LG);
+ }
+ .fw-xl {
+    font-weight: var(--FW-XL);
  }
 
  
