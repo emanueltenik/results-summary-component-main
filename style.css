@@ -7,10 +7,11 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Hanken Grotesk';
-    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
-    font-weight: 500 800;
+html, body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 body {
@@ -71,7 +72,7 @@ body {
   /*  || GENERAL STYLES   */
 body {
     font-size: var(--fs-base);
-    font-weight: var(--FW-BASE);
+    font-weight: var(--FW-sm);
     min-height: 100vh;
     overflow-y: auto;
     background-color: var(--NEUTRAL_LIGHT_COLOR);
@@ -89,8 +90,8 @@ h3 {
 .result output {
     order: 2;
     background: linear-gradient(180deg, hsla(241, 72%, 46%, 1) 55%, var(--PRIMARY) );
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display:  flex;
     justify-content: center;
@@ -106,16 +107,21 @@ h3 {
 
 .result > p:nth-child(2) strong {
     display: block;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-md);
     color: var(--NEUTRAL_LIGHT_COLOR);
 }
 
 #total-score {
-    font-size: var(--fs-xxl);
+    font-size: var(--fs-xxxl);
     font-weight: var(--FW-XL);
     color: var(--NEUTRAL_LIGHT_COLOR);
+    margin: 0;
 }
 
+#total-score + span {
+    display: block;
+    text-align: center;
+}
 .wrapper {
     width: 100%;
     margin: auto;
@@ -194,7 +200,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 2em;
+    gap: 1.125em;
     margin-bottom: 1.625em; 
 }
 
