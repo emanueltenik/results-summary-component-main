@@ -34,7 +34,7 @@ Screenshot of my solution.
 ### Links
 
 - Solution URL :
-- [Live site: https://emanueltenik.github.io/results-summary-component-main/](https://emanueltenik.github.io/results-summary-component-main/)
+- Live site: [https://emanueltenik.github.io/results-summary-component-main/](https://emanueltenik.github.io/results-summary-component-main/)
 
 ## My process
 
